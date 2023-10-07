@@ -1,0 +1,18 @@
+<div id="voltar-ao-topo" onclick="voltarAoTopo()">
+	</div>
+	<style>	#voltar-ao-topo
+		{
+		width:90px;
+		height:35px;
+		border-radius:34px;
+		background:url(https://i.imgur.com/GawXkd7.gif)center/150%no-repeat #fff;
+		position:fixed;
+		bottom:70px;
+		left:10px;
+		z-index:999;
+		cursor:pointer;
+		display:none;
+		}
+	</style>
+	<script>document.addEventListener('DOMContentLoaded',function(){window.addEventListener('scroll',function(){var t=document.getElementById('voltar-ao-topo');document.documentElement.scrollTop>600||document.body.scrollTop>600?t.style.display='block':t.style.display='none'})});function voltarAoTopo(){'scrollBehavior'in document.documentElement.style?document.documentElement.scrollTo({top:0,behavior:'smooth'}):function(t){var e=document.documentElement.scrollTop,n=performance.now();function o(t){var a=t-n,r=Math.min(a/t,1);document.documentElement.scrollTop=e*(1-r);a<t?window.requestAnimationFrame(o):document.documentElement.scrollTop=0;}window.requestAnimationFrame(o)}(500);}
+	</script>
